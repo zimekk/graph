@@ -6,7 +6,7 @@ env.config({ path: path.resolve(__dirname, "../../.env") });
 
 export default (env, { mode }, dev = mode === "development") => ({
   target: "web",
-  devtool: dev ? "eval" : "source-map",
+  devtool: dev ? "eval-cheap-source-map" : "source-map",
   entry: require.resolve("./src"),
   module: {
     rules: [

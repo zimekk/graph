@@ -6,7 +6,7 @@ import styles from "./App.module.scss";
 const Spinner = () => <span>Loading...</span>;
 
 const PAGES = {
-  hello: lazy(() => import("./Hello")),
+  graph: lazy(() => import("./Graph")),
 };
 
 const getPage = (location: { hash: string }) => {
@@ -28,7 +28,7 @@ function App() {
   return (
     <section className={styles.App}>
       <h1 className={styles.Nav}>
-        Hello
+        Graph
         {Object.keys(PAGES).map((page) => (
           <a key={page} href={`#${page}`}>
             {page}
