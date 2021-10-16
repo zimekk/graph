@@ -7,3 +7,13 @@
     border: 1px solid gray;
   }
 }
+
+.Editor {
+  display: flex;
+  height: 10vh;
+  border: 2px solid blue;
+  textarea {
+    border: 0;
+    flex: 1;
+  }
+}
